@@ -1,0 +1,6 @@
+com\example\crudbook\ServletInitializer.class
+com\example\crudbook\BookController.class
+com\example\crudbook\model\Book.class
+com\example\crudbook\repo\BookRepository.class
+com\example\crudbook\service\BookService.class
+com\example\crudbook\CrudbookApplication.class
