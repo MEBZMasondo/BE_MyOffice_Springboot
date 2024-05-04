@@ -11,25 +11,11 @@ import java.util.Optional;
 @Transactional
 public class BookService {
 
-    //-------------------------------------------------------------------------------------------------------------
-    /** Below is the old way of */
-
-    //private BookRepository bookRepository;
-    //public BookService(BookRepository bookRepository) {
-    //    this.bookRepository = bookRepository;
-    //}
-
-    /** field injection for injecting dependencies */
-    //@Autowired
-    //private BookRepository bookRepository;
-
     private final BookRepository bookRepository;
     @Autowired
     public BookService(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
-
-    //-------------------------------------------------------------------------------------------------------------
 
     public Iterable<Book> getBookAll() {
         return bookRepository.findAll();

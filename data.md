@@ -3,17 +3,17 @@
 ```
 http://
 GET:
-http://localhost:8080/api/books/getAllBooks
-http://localhost:8080/api/books/1   // TODO : change in the program code
+http://localhost:8080/api/v1/books/getAllBooks
+http://localhost:8080/api/v1/books/1   // TODO : change in the program code
 
 POST:
-http://localhost:8080/api/books/addBook
+http://localhost:8080/api/v1/books/addBook
 
 PUT:
-http://localhost:8080/api/books/updateBook/1
+http://localhost:8080/api/v1/books/updateBook/1
 
 DELETE:
-http://localhost:8080/api/books/deleteBook/1
+http://localhost:8080/api/v1/books/deleteBook/1
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 UPDATE REQUEST BODY
