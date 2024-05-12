@@ -1,19 +1,15 @@
 package com.example.crudbook.service;
 
-import com.example.crudbook.repo.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.example.crudbook.model.Product;
 
-@Service
-public class ProductService {
+import java.util.List;
 
-    private final ProductRepository productRepository;
-    @Autowired
-    public ProductService(ProductRepository productRepository) {
-        this.productRepository = productRepository;
-    }
+public interface ProductService {
 
-
-
+    List<Product> getAllProducts();
+    Product getProductById(Long id);
+    Product addProduct(Product product);
+    Product updateProduct(Long id, Product product);
+    void deleteProduct(Long id);
 
 }

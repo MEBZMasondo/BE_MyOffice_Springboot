@@ -1,7 +1,6 @@
-# NOTES
+# INFORMATION FOR BOOK
 
 ```
-http://
 GET:
 http://localhost:8080/api/v1/books/getAllBooks
 http://localhost:8080/api/v1/books/1   // TODO : change in the program code
